@@ -1,0 +1,96 @@
+name: 手动同步或发布周报
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_update:
+        description: '确认现在手动读取一次腾讯文档（请先停止外部定时触发）'
+        type: boolean
+        required: true
+        default: false
+      publish_page:
+        description: '发布当前网页（首次部署或修改界面后可单独勾选）'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-report-manual-update
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_update
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      revision: ${{ steps.commit.outputs.revision }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check report conversion and sync behavior
+        run: node --test tests/*.test.mjs
+      - name: Read Tencent Docs once
+        env:
+          TENCENT_DOCS_TOKEN: ${{ secrets.TENCENT_DOCS_TOKEN }}
+        run: node scripts/sync.mjs
+      - name: Commit only changed report content
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f data/data.json ] && { ! git ls-files --error-unmatch data/data.json >/dev/null 2>&1 || ! git diff --quiet -- data/data.json; }; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add -- data/data.json
+            git commit -m 'chore: update weekly report data'
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'No report changes; no commit.'
+          fi
+          echo "revision=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: sync
+    if: >-
+      ${{ !cancelled() && github.ref == 'refs/heads/main' &&
+          ((needs.sync.result == 'success' && (needs.sync.outputs.changed == 'true' || inputs.publish_page)) ||
+           (needs.sync.result == 'skipped' && inputs.publish_page)) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.sync.outputs.revision || github.sha }}
+          persist-credentials: false
+      - uses: actions/configure-pages@v5
+      - name: Prepare only public website files
+        shell: bash
+        run: |
+          mkdir -p _site/data
+          cp index.html _site/index.html
+          cp data/data.json _site/data/data.json
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

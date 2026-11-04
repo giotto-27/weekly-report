@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="腾讯文档在线周报与考勤看板" />
+  <title>团队周报看板</title>
+  <style>
+    :root {
+      --bg:#f5f7fb; --panel:#fff; --text:#172033; --muted:#667085; --line:#e7eaf0;
+      --brand:#315efb; --brand-soft:#eef3ff; --green:#16865c; --green-soft:#edfbf5;
+      --orange:#b95c00; --orange-soft:#fff5e8; --blue:#2463d4; --blue-soft:#edf4ff;
+      --red:#b42318; --shadow:0 10px 30px rgba(16,24,40,.06); --radius:18px;
+    }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif}
+    button,select{font:inherit} .wrap{max-width:1240px;margin:0 auto;padding:34px 22px 60px}
+    .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:22px;margin-bottom:24px}
+    .title h1{margin:0;font-size:30px;letter-spacing:-.02em}.title p{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .sync{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:13px;white-space:nowrap;margin-top:8px}.dot{width:8px;height:8px;border-radius:50%;background:#20b26b;box-shadow:0 0 0 4px #e9f8f1}.dot.loading{background:#f79009;box-shadow:0 0 0 4px #fff3df}.dot.error{background:#d92d20;box-shadow:0 0 0 4px #feeceb}
+    .people-panel{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius);padding:16px 18px;margin-bottom:14px}.people-title{color:var(--muted);font-size:12px;font-weight:700;margin-bottom:10px}.people-groups{display:flex;flex-direction:column;gap:12px}.people-group{display:grid;grid-template-columns:100px minmax(0,1fr);gap:12px;align-items:center}.people-group-label{color:#475467;font-size:14px;font-weight:700;white-space:nowrap}.people-buttons{display:flex;flex-wrap:nowrap;gap:9px;overflow-x:auto;padding:3px 0}.person-btn{flex:0 0 80px;width:80px;height:42px;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;border:1px solid #d9dee8;background:#fff;color:#344054;border-radius:10px;padding:0;font-weight:700;cursor:pointer;transition:.15s ease}.person-btn:hover{border-color:#9db1ff;background:#f7f9ff}.person-btn.active{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 4px 12px rgba(49,94,251,.18)}.filters{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius);padding:18px;display:grid;grid-template-columns:1fr;gap:14px;align-items:end;margin-bottom:20px}
+    .field label{display:block;color:var(--muted);font-size:12px;font-weight:700;margin:0 0 7px}.field select{width:100%;height:46px;padding:0 13px;border:1px solid #d9dee8;border-radius:11px;background:#fff;color:var(--text);outline:none}.field select:focus{border-color:#8ba7ff;box-shadow:0 0 0 3px #eef3ff}.week-nav{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}.week-btn{height:46px;border:1px solid #d9dee8;border-radius:11px;background:#fff;color:#344054;padding:0 14px;font-weight:700;cursor:pointer;white-space:nowrap}.week-btn:hover:not(:disabled){border-color:#9db1ff;background:#f7f9ff}.week-btn:disabled{opacity:.4;cursor:not-allowed}
+    .btn{height:46px;border:0;border-radius:11px;padding:0 18px;background:var(--brand);color:#fff;font-weight:700;cursor:pointer}.btn:hover{filter:brightness(.98)}.btn:disabled{opacity:.55;cursor:not-allowed}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}.tag{padding:6px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#475467;font-size:12px;font-weight:700}
+    .primary-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:18px}.card{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius);padding:20px;min-height:210px}.card h2{margin:0 0 14px;font-size:16px;display:flex;align-items:center;gap:9px}.accent{width:10px;height:10px;border-radius:3px}.complete{border-top:4px solid #35b77b}.problem{border-top:4px solid #f79009}.next{border-top:4px solid #528bff}.complete .accent{background:#35b77b}.problem .accent{background:#f79009}.next .accent{background:#528bff}
+    .content{white-space:pre-wrap;line-height:1.75;font-size:15px;color:#344054}.empty{color:#98a2b3;font-style:italic}
+    .attendance{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius);padding:20px;margin-bottom:18px}.section-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:15px}.section-head h2{margin:0;font-size:17px}.section-head span{color:var(--muted);font-size:12px}
+    .att-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.day{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fbfcfe}.day-name{text-align:center;padding:9px 6px;font-weight:800;font-size:13px;border-bottom:1px solid var(--line);background:#f8fafc}.half{display:grid;grid-template-columns:42px 1fr;gap:6px;align-items:center;padding:10px 8px;min-height:44px}.half+ .half{border-top:1px solid #edf0f4}.half-label{font-size:11px;color:var(--muted)}.status{font-size:12px;font-weight:700;word-break:break-word}.status.good{color:var(--green)}.status.warn{color:var(--orange)}.status.bad{color:var(--red)}.status.neutral{color:#475467}.half.color-marked{border-radius:8px;margin:5px 6px;padding:8px 6px}.half.color-marked .half-label,.half.color-marked .status{color:#172033;text-shadow:0 1px 0 rgba(255,255,255,.55)}
+    .secondary{display:grid;grid-template-columns:1fr;gap:16px}.monthly{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius);padding:20px}.monthly h2{margin:0 0 13px;font-size:16px}
+    .errorbox{display:none;background:#fff;border:1px solid #fecdca;border-left:4px solid #d92d20;border-radius:12px;padding:14px 16px;color:#912018;margin-bottom:18px;line-height:1.55}.loading-mask{opacity:.58;pointer-events:none}
+    .footer{margin-top:20px;color:#98a2b3;font-size:12px;text-align:center}
+    @media(max-width:900px){.primary-grid{grid-template-columns:1fr}.filters{grid-template-columns:1fr}.att-grid{grid-template-columns:repeat(4,1fr)}}
+    @media(max-width:620px){.wrap{padding:24px 14px 40px}.topbar{display:block}.sync{margin-top:14px}.filters{grid-template-columns:1fr}.people-buttons{gap:7px}.person-btn{font-size:13px}.week-nav{grid-template-columns:1fr 1fr}.week-nav select{grid-column:1/-1;grid-row:1}.week-btn{grid-row:2}.att-grid{grid-template-columns:1fr 1fr}.title h1{font-size:25px}.card{min-height:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap" id="app">
+    <div class="topbar">
+      <div class="title"><h1>团队周报看板</h1><p>腾讯文档自动同步 · 选择人员与周次查看周报和出勤</p></div>
+      <div class="sync"><span class="dot" id="syncDot"></span><span id="syncText">准备同步</span></div>
+    </div>
+
+    <div class="errorbox" id="errorBox"></div>
+
+    <section class="people-panel">
+      <div class="people-title">人员</div>
+      <div class="people-groups" id="peopleButtons"></div>
+    </section>
+
+    <section class="filters" id="filters">
+      <div class="field">
+        <label for="weekSelect">周次</label>
+        <div class="week-nav">
+          <button type="button" class="week-btn" id="prevWeekBtn">← 上一周</button>
+          <select id="weekSelect"></select>
+          <button type="button" class="week-btn" id="nextWeekBtn">下一周 →</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="meta" id="meta"></div>
+
+    <section class="primary-grid">
+      <article class="card complete"><h2><span class="accent"></span>本周完成情况</h2><div class="content" id="completed"></div></article>
+      <article class="card problem"><h2><span class="accent"></span>所遇到的问题</h2><div class="content" id="problems"></div></article>
+      <article class="card next"><h2><span class="accent"></span>下周工作计划</h2><div class="content" id="nextPlan"></div></article>
+    </section>
+
+    <section class="attendance">
+      <div class="section-head"><h2>本周出勤情况</h2><span id="attendanceSummary"></span></div>
+      <div class="att-grid" id="attendanceGrid"></div>
+    </section>
+
+    <section class="secondary">
+      <article class="monthly"><h2>月度计划</h2><div class="content" id="monthlyPlan"></div></article>
+    </section>
+
+    <div class="footer">数据只读展示 · 页面不会修改腾讯文档内容</div>
+  </main>
+
+<script>
+const els = Object.fromEntries(['app','filters','peopleButtons','weekSelect','prevWeekBtn','nextWeekBtn','meta','completed','problems','nextPlan','attendanceGrid','attendanceSummary','monthlyPlan','syncDot','syncText','errorBox'].map(id=>[id,document.getElementById(id)]));
+let state={people:[],weeks:[],person:'',weekIndex:0,timer:null,data:null};
+const DAYS=['周一','周二','周三','周四','周五','周六','周日'];
+function e(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+function setLoading(v,msg='正在读取最新数据…'){els.app.classList.toggle('loading-mask',v);els.syncDot.className='dot'+(v?' loading':'');els.syncText.textContent=v?msg:els.syncText.textContent}
+function showError(msg){els.errorBox.style.display='block';els.errorBox.textContent=msg;els.syncDot.className='dot error';els.syncText.textContent='同步失败'}
+function clearError(){els.errorBox.style.display='none';els.errorBox.textContent=''}
+function textOrEmpty(v){return v&&String(v).trim()?e(v):'<span class="empty">暂无填写</span>'}
+function statusClass(v){const s=String(v||'').toLowerCase();if(!s)return 'neutral';if(/出勤|正常|到岗|√|✓|在岗|ok|全天/.test(s))return 'good';if(/迟到|早退|请假|外出|出差|调休|半天|面试|生理期|回老家|医院/.test(s))return 'warn';if(/缺勤|旷工|×|✗|未到/.test(s))return 'bad';return 'neutral'}
+function chinaTargetWeek(offsetWeeks=-1){
+  const now=new Date();
+  const parts=Object.fromEntries(new Intl.DateTimeFormat('en-US',{
+    timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',weekday:'short'
+  }).formatToParts(now).filter(p=>p.type!=='literal').map(p=>[p.type,p.value]));
+  const y=Number(parts.year),m=Number(parts.month),d=Number(parts.day);
+  const wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[parts.weekday];
+  const monday=new Date(Date.UTC(y,m-1,d));
+  monday.setUTCDate(monday.getUTCDate()-((wd+6)%7)+offsetWeeks*7);
+  const sunday=new Date(monday);
+  sunday.setUTCDate(sunday.getUTCDate()+6);
+  const mmdd=x=>String(x.getUTCMonth()+1).padStart(2,'0')+'.'+String(x.getUTCDate()).padStart(2,'0');
+  return {label:mmdd(monday)+'-'+mmdd(sunday),year:monday.getUTCFullYear(),start:monday.getTime()};
+}
+function defaultWeekIndex(weeks){
+  const target=chinaTargetWeek(-1);
+  const exact=weeks.findIndex(w=>String(w.week||'').trim()===target.label&&String(w.year||'')===String(target.year));
+  if(exact>=0)return exact;
+  let best=0,bestDiff=Infinity;
+  weeks.forEach((w,i)=>{
+    const m=String(w.week||'').match(/^(\d{1,2})\.(\d{1,2})-(\d{1,2})\.(\d{1,2})$/);
+    const yy=Number(w.year);
+    if(!m||!yy)return;
+    const ts=Date.UTC(yy,Number(m[1])-1,Number(m[2]));
+    const diff=Math.abs(ts-target.start);
+    if(diff<bestDiff){bestDiff=diff;best=i}
+  });
+  return best;
+}
+function renderPeople(){
+  const prev=state.person;
+  if(!state.people.some(p=>p.id===prev))state.person=state.people[0]?.id||'';
+  const groups=[
+    {label:'工程师/博士',names:['丁英龙','丁维贤','陈建兴','潘羽涵','金逸辰','罗荣亮','吴宁远','王思逸']},
+    {label:'硕士/本科',names:['陈翰文','罗森','张鑫','武昊延','黄健昆']}
+  ];
+  els.peopleButtons.innerHTML=groups.map(group=>{
+    const people=group.names.map(name=>state.people.find(p=>p.name.trim()===name)).filter(Boolean);
+    const buttons=people.map(p=>`<button type="button" class="person-btn${p.id===state.person?' active':''}" data-person-id="${e(p.id)}">${e(p.name.trim())}</button>`).join('');
+    return `<div class="people-group" role="group" aria-label="${e(group.label)}"><span class="people-group-label">${e(group.label)}</span><div class="people-buttons">${buttons}</div></div>`;
+  }).join('');
+}
+function renderWeeks(){
+  els.weekSelect.innerHTML=state.weeks.map((w,i)=>{const y=w.year?String(w.year)+'年':'';return `<option value="${i}">${e([y,w.month,w.week].filter(Boolean).join(' · '))}</option>`}).join('');
+  if(state.weekIndex>=state.weeks.length)state.weekIndex=0;
+  els.weekSelect.value=String(state.weekIndex);
+  els.prevWeekBtn.disabled=!state.weeks.length||state.weekIndex<=0;
+  els.nextWeekBtn.disabled=!state.weeks.length||state.weekIndex>=state.weeks.length-1;
+}
+function renderWeek(){const w=state.weeks[state.weekIndex];if(!w){['completed','problems','nextPlan','monthlyPlan'].forEach(k=>els[k].innerHTML='<span class="empty">没有可展示的周报记录</span>');els.meta.innerHTML='';els.attendanceGrid.innerHTML='';els.attendanceSummary.textContent='';return}
+  els.meta.innerHTML=[w.year?String(w.year)+'年':'',w.month,w.week].filter(Boolean).map(x=>`<span class="tag">${e(x)}</span>`).join('');
+  els.completed.innerHTML=textOrEmpty(w.completed);els.problems.innerHTML=textOrEmpty(w.problems);els.nextPlan.innerHTML=textOrEmpty(w.nextPlan);els.monthlyPlan.innerHTML=textOrEmpty(w.monthlyPlan);
+  els.attendanceGrid.innerHTML=DAYS.map((d,di)=>{
+    const am=w.attendance?.[di*2]||'',pm=w.attendance?.[di*2+1]||'';
+    const amColor=w.attendanceColors?.[di*2]||'',pmColor=w.attendanceColors?.[di*2+1]||'';
+    const half=(label,value,color)=>{
+      const hasColor=Boolean(color);
+      const txt=String(value).trim()?e(value):'-';
+      const style=hasColor?` style="background:${e(color)}"`:'';
+      return `<div class="half${hasColor?' color-marked':''}"${style}><span class="half-label">${label}</span><span class="status ${statusClass(value)}">${txt}</span></div>`;
+    };
+    return `<div class="day"><div class="day-name">${d}</div>${half('上午',am,amColor)}${half('下午',pm,pmColor)}</div>`;
+  }).join('');
+  els.attendanceSummary.textContent='绿色 = 出勤 · 灰色 = 周末/节假日 · 红色 = 请假';
+}
+function setPerson(personId='',keepWeek=false){
+  const people=state.data?.people||[];
+  const person=people.find(p=>p.id===personId)||people[0];
+  state.people=people.map(({id,name})=>({id,name}));
+  state.person=person?.id||'';
+  state.weeks=person?.weeks||[];
+  if(!keepWeek) state.weekIndex=state.weeks.length?defaultWeekIndex(state.weeks):0;
+  if(state.weekIndex>=state.weeks.length) state.weekIndex=state.weeks.length?defaultWeekIndex(state.weeks):0;
+  renderPeople();renderWeeks();renderWeek();
+}
+async function load(personId='',keepWeek=false){
+  clearError();setLoading(true);
+  try{
+    const r=await fetch('./data/data.json',{cache:'no-cache'});
+    const data=await r.json();
+    if(!r.ok||data.error) throw new Error(data.error||`HTTP ${r.status}`);
+    if(!Array.isArray(data?.people)) throw new Error('数据格式无效');
+    state.data=data;
+    setPerson(personId||state.person,keepWeek);
+    const t=data.syncedAt?new Date(data.syncedAt):null;
+    els.syncDot.className='dot';
+    els.syncText.textContent=t&&!Number.isNaN(t.getTime())
+      ? '数据最近更新 · '+t.toLocaleString('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})
+      : '等待首次同步';
+  }catch(err){showError('暂时没有可显示的数据：'+(err.message||String(err))+'。如果刚部署，请先在 GitHub Actions 手动运行一次“同步腾讯文档”。')}
+  finally{setLoading(false)}
+}
+els.peopleButtons.addEventListener('click',ev=>{const btn=ev.target.closest('.person-btn');if(!btn)return;state.person=btn.dataset.personId||'';setPerson(state.person,false)});
+els.weekSelect.addEventListener('change',()=>{state.weekIndex=Number(els.weekSelect.value)||0;renderWeeks();renderWeek()});
+els.prevWeekBtn.addEventListener('click',()=>{if(state.weekIndex<=0)return;state.weekIndex--;renderWeeks();renderWeek()});
+els.nextWeekBtn.addEventListener('click',()=>{if(state.weekIndex>=state.weeks.length-1)return;state.weekIndex++;renderWeeks();renderWeek()});
+
+load();state.timer=setInterval(()=>{if(document.visibilityState==='visible')load(state.person,true)},300000);
+</script>
+</body>
+</html>
+
