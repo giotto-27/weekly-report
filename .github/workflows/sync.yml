@@ -1,10 +1,15 @@
-name: 手动同步或发布周报
+name: 同步和发布周报
 
 on:
+  schedule:
+    - cron: '0 6 * * 1-5'
+      timezone: Asia/Shanghai
+    - cron: '0 9,14,18 * * 1'
+      timezone: Asia/Shanghai
   workflow_dispatch:
     inputs:
       confirm_update:
-        description: '确认现在手动读取一次腾讯文档（请先停止外部定时触发）'
+        description: '确认现在额外读取一次腾讯文档'
         type: boolean
         required: true
         default: false
@@ -23,7 +28,10 @@ concurrency:
 
 jobs:
   sync:
-    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_update
+    if: >-
+      ${{ github.ref == 'refs/heads/main' &&
+          (github.event_name == 'schedule' ||
+           (github.event_name == 'workflow_dispatch' && inputs.confirm_update)) }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -33,6 +41,8 @@ jobs:
       revision: ${{ steps.commit.outputs.revision }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -78,7 +88,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ needs.sync.outputs.revision || github.sha }}
+          ref: ${{ needs.sync.outputs.revision || 'main' }}
           persist-credentials: false
       - uses: actions/configure-pages@v5
       - name: Prepare only public website files
