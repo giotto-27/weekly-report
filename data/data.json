@@ -1,7 +1,6 @@
 {
   "source": "Tencent Docs online spreadsheet",
   "fileId": "DUXNBVnVMTG5tb1RH",
-  "syncedAt": "2026-10-11T09:52:18.665Z",
   "people": [
     {
       "id": "pb3bzy",
@@ -2176,9 +2175,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、IF后仿网表优化，初次线性度仿真结果已出，目前结果有问题，正在排查",
+          "problems": "无",
+          "nextPlan": "解决后仿异常问题，逐步完成线性度、温漂等仿真"
         },
         {
           "year": "2026",
@@ -2217,9 +2216,9 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、IF后仿问题已经解决，目前初步仿真小电流线性度正常，正在对大电流线性度进行仿真\n2、DAC项目的OWI测试电路原理图已经设计完成\n3、IF项目ESD测试方案已确定",
+          "problems": "无",
+          "nextPlan": "1、继续进行IF后仿工作\n2、ZF结题工作按要求准备\n3、准备二期脑计划方案"
         },
         {
           "year": "2026",
@@ -2258,9 +2257,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、IF后仿初步性能正常，已经整理IF电路至618\n服务器继续仿真，减轻服务器压力\n2、KJB相关ppt及文档准备，ZF文档修改",
+          "problems": "无",
+          "nextPlan": "1、继续IF仿真\n2、准备新专项的文字材料撰写\n3、准备脑计划技术方案ppt"
         },
         {
           "year": "2026",
@@ -2299,9 +2298,9 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、ZF材料修改，正在继续完善\n2、IF项目汇报评审，后续验证方案正在进行\n3、脑机专项采集芯片技术方案制定，文档撰写",
+          "problems": "无",
+          "nextPlan": "1、完成ZF文档修改\n2、完成脑机专项文档撰写\n3、IF仿真基本完成"
         },
         {
           "year": "2026",
@@ -4682,8 +4681,8 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.学习脑机接口相关知识\n2.学习DAC相关知识\n3.阅读论文",
-          "completed": "1.学习《数据转换器》第三章内容(50%)\n2.阅读脑机接口板级系统的论文（50%）\n3.学习DAC基础知识",
+          "monthlyPlan": "",
+          "completed": "",
           "problems": "",
           "nextPlan": ""
         },
@@ -6787,253 +6786,7 @@
         {
           "year": "2026",
           "month": "九月",
-          "week": "09.07-09.13",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8"
-          ],
-          "monthlyPlan": "1.学习脑机接口相关知识\n2.学习DAC相关知识\n3.阅读论文",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "九月",
-          "week": "09.14-09.20",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "",
-            "",
-            "#92D050",
-            "#92D050"
-          ],
-          "monthlyPlan": "1.学习脑机接口相关知识\n2.学习DAC相关知识\n3.阅读论文",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "九月",
-          "week": "09.21-09.27",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8"
-          ],
-          "monthlyPlan": "1.学习脑机接口相关知识\n2.学习DAC相关知识\n3.阅读论文",
-          "completed": "1.学习《数据转换器》第三章内容(50%)\n2.阅读脑机接口板级系统的论文（50%）\n3.学习DAC基础知识",
-          "problems": "无",
-          "nextPlan": "1.学习《数据转换器》第三章内容(50%)\n2.阅读《基于时域电荷平衡的  神经电刺激芯片设计》硕士论文\n3.阅读脑机接口板级系统的论文"
-        },
-        {
-          "year": "2026",
-          "month": "九月",
-          "week": "09.28-10.04",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "monthlyPlan": "1.学习脑机接口相关知识\n2.学习DAC相关知识\n3.阅读论文",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十月",
-          "week": "10.05-10.11",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#F4F5F8",
-            "#F4F5F8"
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十月",
-          "week": "10.12-10.18",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十月",
-          "week": "10.19-10.25",
+          "week": "09.01-09.30",
           "attendance": [
             "",
             "",
@@ -7074,7 +6827,7 @@
         {
           "year": "2026",
           "month": "十月",
-          "week": "10.26-11.01",
+          "week": "10.01-10.31",
           "attendance": [
             "",
             "",
@@ -7092,59 +6845,18 @@
             ""
           ],
           "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十一月",
-          "week": "11.02-11.08",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
             "#F4F5F8",
             "#F4F5F8",
+            "#F4F5F8",
+            "#F4F5F8",
+            "#F4F5F8",
+            "#F4F5F8",
+            "#92D050",
+            "#92D050",
+            "#92D050",
+            "#92D050",
+            "#92D050",
+            "#92D050",
             "#F4F5F8",
             "#F4F5F8"
           ],
@@ -7156,130 +6868,7 @@
         {
           "year": "2026",
           "month": "十一月",
-          "week": "11.09-11.15",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十一月",
-          "week": "11.16-11.22",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8"
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十一月",
-          "week": "11.23-11.29",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十一月",
-          "week": "11.30-12.06",
+          "week": "11.01-11.30",
           "attendance": [
             "",
             "",
@@ -7320,7 +6909,7 @@
         {
           "year": "2026",
           "month": "十二月",
-          "week": "12.07-12.13",
+          "week": "12.01-12.31",
           "attendance": [
             "",
             "",
@@ -7352,129 +6941,6 @@
             "",
             "",
             ""
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十二月",
-          "week": "12.14-12.20",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8"
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十二月",
-          "week": "12.21-12.27",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
-        },
-        {
-          "year": "2026",
-          "month": "十二月",
-          "week": "12.28-01.03",
-          "attendance": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "attendanceColors": [
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#92D050",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8",
-            "#F4F5F8"
           ],
           "monthlyPlan": "",
           "completed": "",
@@ -9655,10 +9121,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.DSM改IADC，RST时序和开关设计\n2.EXP理想环路实现",
+          "completed": "1. 解决小电流情况下的校准问题\n2. 修改后的IDAC代入系统仿真",
+          "problems": "无",
+          "nextPlan": "1.在此基础上继续完成IADC RST的实现"
         },
         {
           "year": "2026",
@@ -9689,17 +9155,17 @@
             "#92D050",
             "#92D050",
             "#92D050",
-            "#92D050",
+            "#FF0000",
             "#92D050",
             "",
             "",
             "",
             ""
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.DSM改IADC，RST时序和开关设计\n2.EXP理想环路实现",
+          "completed": "1.带calibration的IDAC RST时序和bypass设计\n2.INT尝试多种RST方案，目前依然是断开输入电阻的方案系统精度最高",
+          "problems": "连接输入电阻和虚地点的开关可能需要Boostrap开关",
+          "nextPlan": "1.继续优化 IADC RST开关设计\n2.尝试搭建理想EXP环路"
         },
         {
           "year": "2026",
@@ -9737,10 +9203,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.DSM改IADC，RST时序和开关设计\n2.EXP理想环路实现",
+          "completed": "1.带 calibration 的 IDAC RST 逻辑实现\n2.SAB INT RST 尝试和debug\n3.博士年度进展报告\n4.列流片计划",
+          "problems": "无",
+          "nextPlan": "1.系统降速适配RST\n2.搭建EXP理想环路"
         },
         {
           "year": "2026",
@@ -9778,10 +9244,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.DSM改IADC，RST时序和开关设计\n2.EXP理想环路实现",
+          "completed": "1.EXP D-filter 实现与验证\n2.理想电路 (IDAC RC 真实）加 EXP NC 环路",
+          "problems": "目前加了EXP NC环路的理想电路只有90dB",
+          "nextPlan": "1.定位理想电路加EXP NC环路的问题，是否因为真实IDAC导致性能下降，尝试换理想 IDAC debug\n2.将SAB INT换全真，看系统精度极限，并在此基础上优化"
         },
         {
           "year": "2026",
@@ -12368,9 +11834,9 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "1.200M大信号细测 与 其他输入频率测试 \n2.200MHz两块板子测试结果汇总 与 思考 与 收集电源方案信息 \n3.整理20MHz的片子",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.修改20M论文 主要包括MO的文字，1-2添加后的比较，几张图需要重新修改 \n2.复测筛出另外四块片子 \n3.温度测试放在下周 \n4.联系xinyu开会事项 \n5.PCB板支付事项"
         },
         {
           "year": "2026",
@@ -12409,9 +11875,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "1.搭好20M测试台\n2.测了5块板子，2块校准有问题，两块挺好，一块DAC cal有点问题",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.继续把剩下的板子测完，直至找到4块好的板子\n2.温度测试\n3.改20M论文\n4.200M约会"
         },
         {
           "year": "2026",
@@ -12450,9 +11916,9 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "1.测完了剩下的5块板子，11块芯片已筛出5块最好的\n2.20M论文的图已经修改",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.20M论文修改文字和ref等细节问题\n2.温度测试"
         },
         {
           "year": "2026",
@@ -14990,14 +14456,14 @@
             "#F4F5F8",
             "#92D050",
             "#92D050",
-            "#92D050",
+            "#FF9C99",
             "#92D050",
             "#92D050",
             "#92D050",
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.完成双向脑机接口整体架构设计\n2.完成板级芯片选型\n3.确定创新点",
+          "monthlyPlan": "1.EEG AFE论文\n2.博资考\n3.完成双向脑机接口整体板级架构设计\n及芯片选型\n4.寻找创新点",
           "completed": "1.学习SHDR原理，宁远说SHDR只能做scale down，因此需要换一种架构实现满量程测量",
           "problems": "1.目前整体架构思路上有些混乱，需要再好好梳理一下",
           "nextPlan": "1.本周对比集中伪影抑制方案，先确定好一个初步的整体架构"
@@ -15038,10 +14504,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "1.完成双向脑机接口整体架构设计\n2.完成板级芯片选型\n3.确定创新点",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.EEG AFE论文\n2.博资考\n3.完成双向脑机接口整体板级架构设计\n及芯片选型\n4.寻找创新点",
+          "completed": "1.论文introduction部分，完成中文初稿\n2.初步确定创新架构由两步式转换实现",
+          "problems": "1.陈铭易组 JSSC 25 年有一篇两步式转换实现采集的文章，后端使用的是12bit SAR；JSSC 25还有一篇PSAR实现生物信号采集的论文，这两篇论文都需要仔细研究",
+          "nextPlan": "1.修改完成introduction\n2.完成论文系统框图并梳理系统指标"
         },
         {
           "year": "2026",
@@ -15079,10 +14545,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.完成双向脑机接口整体架构设计\n2.完成板级芯片选型\n3.确定创新点",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.EEG AFE论文\n2.博资考\n3.完成双向脑机接口整体板级架构设计\n及芯片选型\n4.寻找创新点",
+          "completed": "1.论文进度：\n   第一章修改完成；第二章修改完成2.1整体架构部分，2.2 IA、2.3 ADC完成初稿\n2.博资考PPT完成初稿",
+          "problems": "目前看两篇SCIS的论文\n架构为：\n第一章引言提出应用需求和设计难点\n第二章直接围绕本文方案展开架构分析与电路实现，没有单独设置综述部分。\n是否需要修改架构？还是继续按照原本思路进行撰写？",
+          "nextPlan": "1.准备博资考\n2.完成论文第二章并制作配图"
         },
         {
           "year": "2026",
@@ -15120,10 +14586,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "1.完成双向脑机接口整体架构设计\n2.完成板级芯片选型\n3.确定创新点",
-          "completed": "",
+          "monthlyPlan": "1.EEG AFE论文\n2.博资考\n3.完成双向脑机接口整体板级架构设计\n及芯片选型\n4.寻找创新点",
+          "completed": "1.博资考笔试面试\n2.论文第二章修改，目前第一二章已定稿",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.制作第二章配图，完成第三章初稿\n2.协助完成申请书刺激芯片部分内容"
         },
         {
           "year": "2026",
@@ -17710,9 +17176,9 @@
             ""
           ],
           "monthlyPlan": "1. 完成CH7001 ANA_TOP的签核\n2. 完成本科生课程材料的撰写\n3. 准备博资考",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 完成了本科生模集课程华大九天版本LAB1的撰写\n2. 完成了本科生模集课程的服务器 & EDA环境准备与压力测试\n3. 完成了ANA_TOP带PAD的仿真验证",
+          "problems": "/",
+          "nextPlan": "1. 完成ANA_TOP、DIG_TOP和PMU_TOP的链接，与SD和数字沟通"
         },
         {
           "year": "2026",
@@ -17751,9 +17217,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "1. 完成CH7001 ANA_TOP的签核\n2. 完成本科生课程材料的撰写\n3. 准备博资考",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 与需求方沟通上电时序，与数字和系统工程师对齐各个接口的连接方法与不同模式配置\n2. 完成了ANA_TOP、DIG_TOP和PMU_TOP的连接，并搭建了对应testbench\n3. 本科生模集作业参考答案版本优化、实验课助教工作\n4. 完成了博资考PPT",
+          "problems": "/",
+          "nextPlan": "1. 完成ANA_TOP、DIG_TOP和PMU_TOP的上电联仿\n2. 准备博资考笔试+面试"
         },
         {
           "year": "2026",
@@ -20339,7 +19805,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.v1芯片测试准备\n2.v2芯片流片推进",
           "completed": "校准算法优化；画图；RA补充电源仿真",
           "problems": "无",
           "nextPlan": "v1测试准备；v2进版图"
@@ -20380,10 +19846,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.v1芯片测试准备\n2.v2芯片流片推进",
+          "completed": "1.校准算法做了简化，之前版本存在多零点问题，修正后减小了性能波动与硬件开销\n2.测试板原理图绘制",
+          "problems": "电路原理图仿真在高温下线性度会下降，初步定位在RA与第二级接口的开关，正在修正",
+          "nextPlan": "1.测试板PCB\n2.IBF版图推进"
         },
         {
           "year": "2026",
@@ -20421,10 +19887,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.v1芯片测试准备\n2.v2芯片流片推进",
+          "completed": "1.测试PCB的原理图准备完成\n2.IBF的版图HALF画完，正在后仿",
+          "problems": "无",
+          "nextPlan": "1.IBF整体版图画完\n2.测试PCB版图\n3.Flash版图规划"
         },
         {
           "year": "2026",
@@ -20462,10 +19928,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.v1芯片测试准备\n2.v2芯片流片推进",
+          "completed": "1.对Flash速度进行优化，缓解了在PVT下的亚稳态问题\n2.PCB电源/数字输出通道数梳理",
+          "problems": "无",
+          "nextPlan": "1.PCB 版图实现\n2.IBF版图推进"
         },
         {
           "year": "2026",
@@ -23010,7 +22476,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续",
+          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续——电路翻新+前端杂波问题+ADC换开关",
           "completed": "1.7001项目一些辅助设计和仿真，比如IBANK压制输出电流纹波\n2.和618那边对接BG测试，程序和设备618基本调试好了，预计最近可以开始测试\n3.BG实际输出的绝对值和温漂波动继续在分析，同时结合7001项目BG进行仿真，正在总结VBG波动与实际电路哪些模块波动关系最密切",
           "problems": "暂无",
           "nextPlan": "1.7001继续维护模块\n2.618继续督促测试\n3.BG继续思考校准\n4.TS抽时间开始整理和debug"
@@ -23042,8 +22508,8 @@
             "#92D050",
             "#92D050",
             "#92D050",
-            "#92D050",
-            "#92D050",
+            "#FF0000",
+            "#FF0000",
             "#92D050",
             "#92D050",
             "",
@@ -23051,10 +22517,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续——电路翻新+前端杂波问题+ADC换开关",
+          "completed": "1.TS重新开始整理，正在检查已完成模块的具体电路规范性，增加相关注释，按照DAC和BMS项目的工程经验重新修改部分不规范电路\n·前端OP的偏置电路\n·数字电路真实化 & LS电路 & 时钟\n·EN电路\n·部分电路尺寸\n·RC滤波部分（如果能够适当增加Fs则可以利用RC滤波滤除斩波和DEM纹波，解决杂波问题）\n2.重新检查原先暂定参数的合理性（AVDD、DVDD、Fs、OSR……）",
+          "problems": "暂无",
+          "nextPlan": "1.继续TS的电路整理、优化、debug\n2.618测试督促\n3.7001项目维护模块"
         },
         {
           "year": "2026",
@@ -23092,10 +22558,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续——电路翻新+前端杂波问题+ADC换开关",
+          "completed": "1.TS重新整理参数：\n①明确AVDD=3.3V，DVDD=1.5V，加入LS电路，重新调整电源混乱命名（AVDD、AGND、VSS、AVSS、SUB、DVDD、DGND……）\n②Fs和OSR调整为合理值：14.48K→32K，724→1024；对于杂波问题，考虑可以适当增大Fs，配合RC滤波滤除部分高频杂波，由此转换时间从50ms→32ms，影响不大\n2.确定上电顺序：模拟-数字-时钟，确定前端时序（暂不包含ADC的复杂时序）\n3.重新整理电路模块：\n①分离前端和高阶补偿电路，独立整理为三个模块：前端、高阶补偿电路、ADC\n②简化模块端口，重新整理TB\n4.优化和完善各模块电路和仿真：\n①前端数字电路全替换真实\n②stb、上电仿真补全（PVT、200p 高低温MC）\n③LS电路、EN电路\n④前端电路的启动电路和管子重新都优化了一遍，同时添加注释\n5.618徐东远那边这几周有事，BG暂时测不了",
+          "problems": "1.高阶补偿电路的VREF产生需要使用前端的VBE合成，但是用电流+电阻实现需要很大的电阻或者电流，都行不通；考虑使用加法器电路，但是R+OP的加法器实现复杂，考虑使用SC加法器+采样电路，加法时直接合成VREF，采样时利用采样电路提供VREF，后续需要验证效果\n2.上电仿真出了一些问题，目前已经debug出是因为上电顺序不对，数字提前模拟上电导致AVDD下的DEM时钟不对，影响了前端建立",
+          "nextPlan": "1.继续TS前端的仿真完善和电路优化\n2.后续进行高阶补偿电路和ADC的仿真完善和电路优化，重点是高阶补偿杂波问题+RC滤波的效果 & ADC的开关更换\n3.整体TS计划：\n10月：电路翻新+前端杂波问题+ADC换开关\n11月~12月中：模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真\n12月中往后~明年3月：工艺替换、系统顶层、版图、后仿\n4.BMS继续维护BG和后续后仿\n5.618督促测试"
         },
         {
           "year": "2026",
@@ -23133,10 +22599,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续——电路翻新+前端杂波问题+ADC换开关",
+          "completed": "1.前端完全真实化：斩波、DEM等数字电路替换、LS、上电时序、EN使能、启动电路上电\n2.前端仿真完善：快慢上电200p MC、EN使能、静态功耗2uA、stb\n3.正在结合理想ADC验证高阶补偿idea和解决杂波问题：目前已经跑通系统，由于仿真速度较慢，还需要一段时间完成工艺角的高阶补偿再验证，然后进行杂波问题的复现和解决",
+          "problems": "暂无",
+          "nextPlan": "1.完成真实前端+理想ADC的"
         },
         {
           "year": "2026",
@@ -23147,8 +22613,8 @@
             "",
             "",
             "",
-            "",
-            "",
+            "感冒",
+            "感冒",
             "",
             "",
             "",
@@ -23163,8 +22629,8 @@
             "#92D050",
             "#92D050",
             "#92D050",
-            "#92D050",
-            "#92D050",
+            "#FF0000",
+            "#FF0000",
             "#92D050",
             "#92D050",
             "#92D050",
@@ -23174,7 +22640,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23215,7 +22681,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23256,7 +22722,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23297,7 +22763,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23338,7 +22804,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23379,7 +22845,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真、工艺替换、系统顶层、版图、后仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23420,7 +22886,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真、工艺替换、系统顶层、版图、后仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23461,7 +22927,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真、工艺替换、系统顶层、版图、后仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -23502,7 +22968,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真、工艺替换、系统顶层、版图、后仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -25723,9 +25189,9 @@
             ""
           ],
           "monthlyPlan": "CH7001项目版图后仿+HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. RA AZ方案加入第二级BUFFER，5+12bit ADC能达到15bit精度，存在一定精度下降\n2. 设计5V下的OTA放大器，用于噪声验证\n3. 与伟宇对接版图，准备CLK GEN和DWA的版图floor plan",
+          "problems": "无",
+          "nextPlan": "1.完善AZ方案，总结问题和结论，准备汇报\n2.7001逻辑部分版图"
         },
         {
           "year": "2026",
@@ -25764,9 +25230,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "CH7001项目版图后仿+HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.按照4858架构搭建11b+11b 32X 20bit SAR ADC，使用AZ RA，理想电路19.81bits ENOB\n2.定位VOS敏感复位开关 30mV的VOS小于1LSB\n3.7001 INT1后仿，RCC combine 1fF电容 2Ω电阻性能正常，但是RCC全抽共模输出功能有问题",
+          "problems": "版图问题定位，可能是网表抽取问题",
+          "nextPlan": "1.优化RA结构，准备汇报\n2.版图问题定位和修改"
         },
         {
           "year": "2026",
@@ -25805,9 +25271,9 @@
             ""
           ],
           "monthlyPlan": "CH7001项目版图后仿+HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.INT1版图定位敏感信号线，SHEIDING屏蔽耦合，RCC网表仿真99dB/104dB(SNDR/SFDR)\n2.INT2和BIAS已抽RCC网表，短仿真正常，正在做INT1+INT2+BIAS后仿\n3.搭建模拟域电荷共享，MSB分裂RA结构，已验证功能和敏感开关影响",
+          "problems": "目前QTZ版图和SDM顶层版图规划还需确定",
+          "nextPlan": "1.SDM后仿继续推进，监督版图进度\n2.HW项目会后总结思路，推进电路设计"
         },
         {
           "year": "2026",
@@ -27450,7 +26916,7 @@
             "#F4F5F8",
             ""
           ],
-          "monthlyPlan": "1、完成LDO设计\n2、DAC项目联仿\n3、进入版图",
+          "monthlyPlan": "",
           "completed": "1、完成细LDO设计，并优化\n2、完善粗糙LDO结构及性能",
           "problems": "",
           "nextPlan": "1、测试模拟、数字以及EFUSE的LDO，进入联仿环节\n2、RC振荡器模块学习"
@@ -27491,7 +26957,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "1、完成LDO设计\n2、DAC项目联仿\n3、进入版图",
+          "monthlyPlan": "",
           "completed": "1、完成粗糙和细致LDO测试\n2、搭建理想RC振荡器模块",
           "problems": "1、发现低温下（-55℃）的高压器件测试会报warning，且有时的测试结果报错（重复测试结果不同），初步判断是PDK问题，切换至-40℃恢复正常",
           "nextPlan": "1、实现RC振荡器功能\n2、完善LDO\n3、联仿测试LDO、bufferx3、\n     DAC"
@@ -27532,7 +26998,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1、完成LDO设计\n2、DAC项目联仿\n3、进入版图",
+          "monthlyPlan": "",
           "completed": "1.完成ldo设计测试\n2.完成RC振荡器理想建模\n3.完成LDO和BUFFER以及DAC联仿",
           "problems": "1.RC振荡器波形不正确，可能是启动电路原因",
           "nextPlan": "1.换用Ring OSC的结构来设计振荡器\n2.LDO进入版图设计"
@@ -27573,7 +27039,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "1、完成LDO设计\n2、DAC项目联仿\n3、进入版图",
+          "monthlyPlan": "",
           "completed": "1.OSC波形测试正确\n2.6V的LDO版图进入绘画，6V和5V的LDO前仿完整测试通过",
           "problems": "",
           "nextPlan": "1.继续完善OSC设计\n2.推进LDO版图进度"
@@ -28394,9 +27860,9 @@
             ""
           ],
           "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、LDO重新调整（负载能力20mA且输出管用ESD结构）\n2、MRC的Floor Plan完成\n3、HRC进入后仿真",
+          "problems": "1、HRC后仿真温漂大、不满足要求，目前正在找原因",
+          "nextPlan": "1、寻找HRC版图问题并完成后仿工作\n2、推进DAC和CMP的Floor Plan工作"
         },
         {
           "year": "2026",
@@ -28435,9 +27901,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、HRC问题找到，因为版图中的核心管的Finger数从1变至4，导致Vgs和阈值电压的温度系数改变，影响整体的温度补偿电流，目前待版图修改好后重新后仿\n2、DAC和CMP的FP基本Fix\n3、MRC的FP按照丁老师和伟宇哥的意见继续修改",
+          "problems": "1、阈值比较器（AGC）和MRC的FP由于有大量电阻，目前存在ACT Density问题，目前让伟宇哥先改，后面我和昊延一起修正各自的FP",
+          "nextPlan": "1、推进HRC的后仿工作\n2、LDO版图本周能出，推进LDO后仿\n3、修正AGC和MRC的ACT Density问题"
         },
         {
           "year": "2026",
@@ -28476,9 +27942,9 @@
             ""
           ],
           "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、HRC完成后仿真\n2、LDO完成后仿真\n3、AGC和MRC的ACT Density问题解决，版图已完成",
+          "problems": "1、HRC后仿真温漂符合±2%要求，目前存在细Trim精度会随着粗Trim码值变化可能会影响整体频漂问题\n2、LDO后仿真低频（1k）PSRR无变化，高频（512k）PSRR掉13dB，不确定是否有问题，需要联仿真看一下",
+          "nextPlan": "1、推进MRC后仿真工作\n2、推进AGC后仿真工作\n3、和丁老师确认HRC和LDO后仿真是否符合要求或者需要改动"
         },
         {
           "year": "2026",
@@ -28516,7 +27982,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -28557,7 +28023,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -28598,7 +28064,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -28639,7 +28105,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -28680,7 +28146,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -31065,9 +30531,9 @@
             ""
           ],
           "monthlyPlan": "CH7001_LRC+CH7001_Buffer+BCI AFE",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 进行LRC的Floor Plan的绘制(75%)，包括基本器件的摆放、Guard Ring的添加、基本电源线的走线、DRC检验的通过；\n2. 完成VCM_BUF的运放优化，最新版本BUF保持stand-by；\n3. 学习开关电容放大器的相关电路知识(70%)",
+          "problems": "暂无",
+          "nextPlan": "1. 继续跟进LRC的Floor Plan，优化电源线走线方式；\n2. 继续学习开关电容放大器相关电路知识；\n3. 阅读BCI AFE的相关论文"
         },
         {
           "year": "2026",
@@ -31106,9 +30572,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "CH7001_LRC+CH7001_Buffer+BCI AFE",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 完成LRC的Floor Plan的绘制(100%)，交由AI完成走线；\n2. 基于AI走线并抽取寄生后所形成的网表文件，完成对LRC模块的电路后仿验证，后仿温漂相较于前仿结果有所缓解；\n3. 学习开关电容电路知识(100%)以及ADC基础知识(10%)",
+          "problems": "暂无",
+          "nextPlan": "1. 等待AI对LRC版图中电阻的Guard-Ring部分进行优化后，基于最新的网表文件再次对LRC模块进行后仿验证工作；\n2. 继续学习ADC相关的电路基础知识；\n3. 阅读BCI AFE的相关论文"
         },
         {
           "year": "2026",
@@ -31147,9 +30613,9 @@
             ""
           ],
           "monthlyPlan": "CH7001_LRC+CH7001_Buffer+BCI AFE",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 基于AI优化版图后抽取的新版本寄生网表文件，完成对LRC的后仿验证；\n2. 学习ADC的相关基础知识(25%)",
+          "problems": "暂无",
+          "nextPlan": "1. 继续学习ADC相关的电路基础知识；\n2. 阅读BCI AFE的相关论文"
         },
         {
           "year": "2026",
@@ -34193,6 +33659,6 @@
         }
       ]
     }
-  ]
+  ],
+  "syncedAt": "2026-11-04T08:01:00.857Z"
 }
-
