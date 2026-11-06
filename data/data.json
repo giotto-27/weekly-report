@@ -22602,7 +22602,7 @@
           "monthlyPlan": "1.7001项目BG、IBANK、TS维护\n2.618BG测试\n3.BG论文思考\n4.TS科研继续——电路翻新+前端杂波问题+ADC换开关",
           "completed": "1.前端完全真实化：斩波、DEM等数字电路替换、LS、上电时序、EN使能、启动电路上电\n2.前端仿真完善：快慢上电200p MC、EN使能、静态功耗2uA、stb\n3.正在结合理想ADC验证高阶补偿idea和解决杂波问题：目前已经跑通系统，由于仿真速度较慢，还需要一段时间完成工艺角的高阶补偿再验证，然后进行杂波问题的复现和解决",
           "problems": "暂无",
-          "nextPlan": "1.完成真实前端+理想ADC的"
+          "nextPlan": "1.完成真实前端+理想ADC的MC仿真，再验证高阶补偿idea，复现杂波问题并思考解决方法"
         },
         {
           "year": "2026",
@@ -33243,7 +33243,7 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "广泛调研包括近10年JSSC，TCAS，ISSCC的DAC方面论文，位数固定在16-24bit",
           "problems": "",
           "nextPlan": ""
         },
@@ -33284,7 +33284,7 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "重点调研24bitDAC论文以及R-2R论文，学习2026年24bitDAC论文中的引用部分",
           "problems": "",
           "nextPlan": ""
         },
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-04T08:01:00.857Z"
+  "syncedAt": "2026-11-06T02:17:56.351Z"
 }
