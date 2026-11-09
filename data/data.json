@@ -14627,10 +14627,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1..EEG AFE论文",
           "completed": "1.制作论文第二三章配图\n2.完成申请书刺激与伪影抑制部分的内容，制作对应部分的研究内容图",
           "problems": "论文重点理解有误，需要重新修改侧重点",
-          "nextPlan": "重新修改论文第一二章并完成配图，预计周三完成"
+          "nextPlan": "1.重新修改论文第一二章并完成配图，预计周三完成\n2.继续完成第三章"
         },
         {
           "year": "2026",
@@ -14668,7 +14668,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1..EEG AFE论文",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -14709,7 +14709,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1..EEG AFE论文",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -14750,7 +14750,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1..EEG AFE论文",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -14791,7 +14791,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1..EEG AFE论文",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-09T05:50:07.500Z"
+  "syncedAt": "2026-11-09T07:53:22.296Z"
 }
