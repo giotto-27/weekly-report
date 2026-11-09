@@ -2339,9 +2339,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、IF项目混仿有问题，效果恶化，主要是时间太短，脉冲数量较少，量化误差的影响已经排查到问题\n2、BCI项目申报书初版整合完成，待后续项目统一修改",
+          "problems": "无",
+          "nextPlan": "1、脑计划技术方案准备完成\n2、IF项目西安评审详细PPT待准备\n3、配合天津ZF后续要求"
         },
         {
           "year": "2026",
@@ -11957,9 +11957,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "1.20M论文书写和改图",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.20M的论文改图\n2.20M电压测试 温度测试"
         },
         {
           "year": "2026",
@@ -14628,9 +14628,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.制作论文第二三章配图",
+          "problems": "论文重点理解有误，需要重新修改侧重点",
+          "nextPlan": "重新修改论文第一二章"
         },
         {
           "year": "2026",
@@ -17258,9 +17258,9 @@
             ""
           ],
           "monthlyPlan": "1. 完成CH7001 ANA_TOP的签核\n2. 完成本科生课程材料的撰写\n3. 准备博资考",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 对齐版图进度\n2. HW项目汇报材料准备",
+          "problems": "/",
+          "nextPlan": "完成带振荡器和不带振荡器的上电仿真"
         },
         {
           "year": "2026",
@@ -17298,10 +17298,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1. 完成CH7001大顶层的版图、后仿\n2. 完成CH7001大顶层的前仿功能验证\n3. 完成CH1012 SHDR、RA等模块",
+          "completed": "1. 完成了带振荡器和不带振荡器的上电仿真，均无问题\n2. 完成了HW项目汇报\n3. 初步验证了RA的idea\n4. 版图进展继续对齐",
+          "problems": "/",
+          "nextPlan": "1. 完成I路和V路单独的混仿验证，确保功能 & 性能无问题\n2. RA idea仿真MC和PVT，直接进版图验证是否后仿也稳定"
         },
         {
           "year": "2026",
@@ -17339,7 +17339,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1. 完成CH7001大顶层的版图、后仿\n2. 完成CH7001大顶层的前仿功能验证\n3. 完成CH1012 SHDR、RA等模块",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -17380,7 +17380,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1. 完成CH7001大顶层的版图、后仿\n2. 完成CH7001大顶层的前仿功能验证\n3. 完成CH1012 SHDR、RA等模块",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -17421,7 +17421,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1. 完成CH7001大顶层的版图、后仿\n2. 完成CH7001大顶层的前仿功能验证\n3. 完成CH1012 SHDR、RA等模块",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -17462,7 +17462,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "1. 完成CH7001大顶层的版图、后仿\n2. 完成CH7001大顶层的前仿功能验证\n3. 完成CH1012 SHDR、RA等模块",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -19970,9 +19970,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.IBF版图正在后仿优化\n2.测试的电流板PCB正在画",
+          "problems": "无",
+          "nextPlan": "1.完成IBF版图后仿验证与优化\n2.完成测试PCB"
         },
         {
           "year": "2026",
@@ -22640,10 +22640,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "1.TS科研：\n①前端杂波问题\n②补偿模块完善\n③ADC电路翻新+开关替换+性能仿真\n④辅助电路（CLK_GEN、IBANK、数字滤波器……）；\n⑤CORE电路核心仿真（温度误差、噪声、功耗……）\n2.BMS BG后仿、TS信号链联仿",
+          "completed": "1.真实前端+理想BUF+理想ADC的MC仿真：\n①杂波问题没有出现，增加MC点数后也没有出现\n②用MATLAB脚本处理原先有问题的数据也没有看到杂波问题\n——怀疑是excel处理数据的精度问题、MATLAB没有精度问题\n2.MC仿真发现需要的补偿电压Vcal波动比较大，主要是OP的mismatch影响，这会影响到trim的范围设计和校准成本（是否能使用批次校准），正在仿真观察具体原因：\n①提高fchop，fs/4→fs/2\n②斩波效果，MC仿真开关斩波对比\n③是否是纹波导致，可以考虑加notch filter",
+          "problems": "暂无",
+          "nextPlan": "1.解决Vcal波动大的问题\n2.然后验证补偿电路（特别是REF产生模块的鲁棒性，需要跟丁老师开会确认）\n3.BMS BG后仿"
         },
         {
           "year": "2026",
@@ -22681,7 +22681,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
+          "monthlyPlan": "1.TS科研：\n①前端杂波问题\n②补偿模块完善\n③ADC电路翻新+开关替换+性能仿真\n④辅助电路（CLK_GEN、IBANK、数字滤波器……）；\n⑤CORE电路核心仿真（温度误差、噪声、功耗……）\n2.BMS BG后仿、TS信号链联仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -22722,7 +22722,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
+          "monthlyPlan": "1.TS科研：\n①前端杂波问题\n②补偿模块完善\n③ADC电路翻新+开关替换+性能仿真\n④辅助电路（CLK_GEN、IBANK、数字滤波器……）；\n⑤CORE电路核心仿真（温度误差、噪声、功耗……）\n2.BMS BG后仿、TS信号链联仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -22763,7 +22763,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
+          "monthlyPlan": "1.TS科研：\n①前端杂波问题\n②补偿模块完善\n③ADC电路翻新+开关替换+性能仿真\n④辅助电路（CLK_GEN、IBANK、数字滤波器……）；\n⑤CORE电路核心仿真（温度误差、噪声、功耗……）\n2.BMS BG后仿、TS信号链联仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -22804,7 +22804,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "1.TS科研——模块进一步完善（CLK_GEN、IBANK、数字滤波器……）；CORE电路核心仿真",
+          "monthlyPlan": "1.TS科研：\n①前端杂波问题\n②补偿模块完善\n③ADC电路翻新+开关替换+性能仿真\n④辅助电路（CLK_GEN、IBANK、数字滤波器……）；\n⑤CORE电路核心仿真（温度误差、噪声、功耗……）\n2.BMS BG后仿、TS信号链联仿",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -27122,9 +27122,9 @@
             ""
           ],
           "monthlyPlan": "1.618DACX项目完成LDO的版图及后仿真\n2.7001振荡器及LDO设计",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、PGA子模块版图绘制完成\n2、AGC后仿完成，性能正常\n3、MRC仿真完成，目前存在温漂和频率Trim范围问题",
+          "problems": "MRC问题汇总\n1、由于CC整体频率下降，不满足在Ttrim=0时的Overlap（偏低）\n2、在NoRC体现出整体温漂系数上升0.7%，导致温度Trim范围偏向正温，负温调节能力太差\n3、可能是寄生电容的问题导致Ctrim的调节频率变低，假设原先Ctrim变化1挡，频率变化X，现在变化不到0.5X，但测试下来不影响整体Overlap",
+          "nextPlan": "1、找到MRC版图问题、修改前仿真电路，重新连线后仿真\n2、待MRC问题解决版图Fix后，解决LDO后仿真高频PSRR掉的太多的问题，目前初步怀疑是输出端口处的开关问题"
         },
         {
           "year": "2026",
@@ -30653,10 +30653,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "CH7001后仿与版图+BCI AFE",
+          "completed": "1. 进行7001项目I_CHANNEL AFE中ALS电路的版图绘制，包括FP的摆放与整体版图的走线，目前正在进行LVS与DRC检验；\n2. 学习ADC的相关基础知识(25%)",
+          "problems": "暂无",
+          "nextPlan": "1. 继续完善ALS电路的整体版图，并准备开始进行CLK_DELAY模块的版图FP的摆放工作；\n2. 继续学习ADC相关的电路基础知识；\n3. 阅读BCI AFE的相关论文"
         },
         {
           "year": "2026",
@@ -30694,7 +30694,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001后仿与版图+BCI AFE",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -30735,7 +30735,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001后仿与版图+BCI AFE",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -30776,7 +30776,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001后仿与版图+BCI AFE",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -30817,7 +30817,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001后仿与版图+BCI AFE",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-06T02:17:56.351Z"
+  "syncedAt": "2026-11-09T01:50:46.261Z"
 }
