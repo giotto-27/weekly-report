@@ -64,11 +64,20 @@ test('empty result and corrupt existing file are not overwritten',async t=>{
 const mockSource = `
 import fs from 'node:fs';
 let calls=0;
+let session=0;
 globalThis.fetch=async(url,options)=>{
   calls++;
   fs.writeFileSync('calls.json',JSON.stringify({calls}));
   if(!options.signal)throw new Error('Request has no timeout signal');
   const req=JSON.parse(options.body),scenario=process.env.MOCK_SCENARIO;
+  const testConnection=scenario.startsWith('style-connection-');
+  const requestSession=options.headers['Mcp-Session-Id'];
+  if(testConnection && req.method==='initialize'){
+    if(requestSession)throw new Error('A new connection must omit the old session');
+    session++;
+  }else if(testConnection && requestSession!=='session-'+session){
+    throw new Error('Request did not use the active session');
+  }
   if(['401','403','429'].includes(scenario))return {ok:false,status:Number(scenario),headers:{get:()=>null}};
   if(scenario==='timeout')throw new DOMException('Simulated request timeout','TimeoutError');
   if(scenario==='bad-json')return {ok:true,headers:{get:()=>null},text:async()=>'<html>bad response</html>'};
@@ -85,12 +94,19 @@ globalThis.fetch=async(url,options)=>{
   if(req.params?.name==='sheet.get_cell_style')result=scenario==='style-error'
     ? {isError:true,content:[{type:'text',text:'style failed'}]}
     : {structuredContent:{cells:[]}};
+  if(testConnection && req.params?.name==='sheet.get_cell_style'){
+    if(session===1 || scenario==='style-connection-persists'){
+      const error={code:-32603,message:'tool execution failed (tool: get_cell_style): type:business, code:6086006, msg:type:framework, code:141, msg:invalid connection'};
+      return {ok:true,headers:{get:()=>null},text:async()=>JSON.stringify({jsonrpc:'2.0',id:req.id,error})};
+    }
+    result={structuredContent:{cells:[{row:0,col:4,background_color:'#ff0000'}]}};
+  }
   const id=scenario==='wrong-id'?999:req.id;
-  return {ok:true,headers:{get:()=>null},text:async()=>JSON.stringify({jsonrpc:'2.0',id,result})};
+  return {ok:true,headers:{get:name=>testConnection && req.method==='initialize' && name==='mcp-session-id'?'session-'+session:null},text:async()=>JSON.stringify({jsonrpc:'2.0',id,result})};
 };
 `;
 
-for(const scenario of ['401','403','429','timeout','bad-json','wrong-id','tool-error','style-error','empty','no-style']) {
+for(const scenario of ['401','403','429','timeout','bad-json','wrong-id','tool-error','style-error','style-connection-persists','empty','no-style']) {
   test('sync failure preserves published data: '+scenario,async t=>{
     const directory=await temporary(t);
     await fs.mkdir(path.join(directory,'data'));
@@ -105,14 +121,31 @@ for(const scenario of ['401','403','429','timeout','bad-json','wrong-id','tool-e
     if(['401','403','429'].includes(scenario))assert.match(run.stderr,new RegExp('HTTP '+scenario));
     if(scenario==='tool-error')assert.match(run.stderr,/读取失败/);
     if(scenario==='style-error')assert.match(run.stderr,/考勤颜色失败/);
+    if(scenario==='style-connection-persists')assert.match(run.stderr,/考勤颜色失败.*invalid connection/);
     if(scenario==='empty')assert.match(run.stderr,/没有有效周记录/);
     if(scenario==='no-style')assert.match(run.stderr,/没有发现考勤颜色读取工具/);
     assert.equal(await fs.readFile(path.join(directory,'data/data.json'),'utf8'),before);
     assert.ok(!run.stderr.includes('private-test-token'));
     const {calls}=JSON.parse(await fs.readFile(path.join(directory,'calls.json'),'utf8'));
     if(['401','403','429','timeout','bad-json','wrong-id'].includes(scenario))assert.equal(calls,1,'error must not trigger automatic retry');
+    if(scenario==='style-error')assert.equal(calls,6,'other style errors must not trigger reconnection');
+    if(scenario==='style-connection-persists')assert.equal(calls,9,'an invalid connection must only be retried once');
   });
 }
+
+test('invalid attendance connection reconnects once and saves the retried style',async t=>{
+  const directory=await temporary(t);
+  await fs.writeFile(path.join(directory,'config.json'),JSON.stringify({fileId:'test',firstWeekYear:2025}));
+  await fs.writeFile(path.join(directory,'mock.mjs'),mockSource);
+  const run=spawnSync(process.execPath,['--import',pathToFileURL(path.join(directory,'mock.mjs')).href,syncScript],{
+    cwd:directory,encoding:'utf8',timeout:5000,
+    env:{...process.env,TENCENT_DOCS_TOKEN:'private-test-token',MOCK_SCENARIO:'style-connection-recovered'},
+  });
+  assert.equal(run.status,0,run.stderr);
+  assert.equal(JSON.parse(await fs.readFile(path.join(directory,'calls.json'),'utf8')).calls,9);
+  const snapshot=JSON.parse(await fs.readFile(path.join(directory,'data/data.json'),'utf8'));
+  assert.equal(snapshot.people[0].weeks[0].attendanceColors[0],'#FF0000');
+});
 
 test('complete sync twice with identical source creates no second file update',async t=>{
   const directory=await temporary(t);

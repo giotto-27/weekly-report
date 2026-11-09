@@ -120,7 +120,7 @@ function renderPeople(){
   const prev=state.person;
   if(!state.people.some(p=>p.id===prev))state.person=state.people[0]?.id||'';
   const groups=[
-    {label:'工程师/博士',names:['丁英龙','丁维贤','陈建兴','潘羽涵','金逸辰','罗荣亮','吴宁远','王思逸']},
+    {label:'工程师/博士',names:['丁英龙','潘羽涵','金逸辰','罗荣亮','吴宁远','王思逸','丁维贤','陈建兴']},
     {label:'硕士/本科',names:['陈翰文','罗森','张鑫','武昊延','黄健昆']}
   ];
   els.peopleButtons.innerHTML=groups.map(group=>{

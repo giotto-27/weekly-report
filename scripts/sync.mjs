@@ -25,7 +25,8 @@ function redacted(message) {
 
 let rpcId = 1;
 let sessionId = '';
-let protocolVersion = '2025-06-18';
+const initialProtocolVersion = '2025-06-18';
+let protocolVersion = initialProtocolVersion;
 
 function parseRpcPayload(raw, contentType, expectedId) {
   if (!raw.trim()) return null;
@@ -79,7 +80,12 @@ async function postRpc(message, { allowEmpty = false } = {}) {
   } catch {
     throw new Error('MCP 响应格式异常或 ID 不匹配，本次停止。');
   }
-  if (payload?.error) throw new Error(`腾讯文档 MCP 错误 ${payload.error.code ?? ''}: ${redacted(payload.error.message || JSON.stringify(payload.error))}`);
+  if (payload?.error) {
+    const { code, message } = payload.error;
+    const error = new Error(`腾讯文档 MCP 错误 ${code ?? ''}: ${redacted(message || JSON.stringify(payload.error))}`);
+    error.code = code;
+    throw error;
+  }
   if (message.id != null && (!payload || !Object.hasOwn(payload, 'result'))) throw new Error('MCP 响应缺少 result。');
   return payload;
 }
@@ -147,6 +153,25 @@ async function callTool(name, args) {
   const payload = unpackToolResult(result);
   if (payload?.error) throw new Error(`${name}: ${redacted(JSON.stringify(payload.error))}`);
   return payload;
+}
+
+let styleConnectionRetried = false;
+async function readAttendanceStyle(tool, args) {
+  try {
+    return await callTool(tool, args);
+  } catch (error) {
+    const invalidConnection = error.code === -32603 &&
+      /code:\s*6086006\b/.test(error.message) &&
+      /code:\s*141,\s*msg:\s*invalid connection\b/i.test(error.message);
+    if (!invalidConnection || styleConnectionRetried) throw error;
+
+    styleConnectionRetried = true;
+    sessionId = '';
+    protocolVersion = initialProtocolVersion;
+    console.warn('腾讯文档考勤颜色连接失效，重新连接并重试一次。');
+    await initialize();
+    return callTool(tool, args);
+  }
 }
 
 function getStyleMap(payload) {
@@ -269,7 +294,7 @@ for (const sheet of sheets) {
   if (styleTool) {
     try {
       const full = parseA1Range(config.range || 'A1:V450');
-      const stylePayload = await callTool(styleTool, {
+      const stylePayload = await readAttendanceStyle(styleTool, {
         file_id: config.fileId,
         sheet_id: sheet.id,
         start_row: full.start_row,
