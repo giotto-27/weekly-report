@@ -14628,9 +14628,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "1.制作论文第二三章配图",
+          "completed": "1.制作论文第二三章配图\n2.完成申请书刺激与伪影抑制部分的内容，制作对应部分的研究内容图",
           "problems": "论文重点理解有误，需要重新修改侧重点",
-          "nextPlan": "重新修改论文第一二章"
+          "nextPlan": "重新修改论文第一二章并完成配图，预计周三完成"
         },
         {
           "year": "2026",
@@ -25311,10 +25311,10 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "CH7001版图后仿+HW项目",
+          "completed": "1.LOOP FILTER部分长仿真结果正常 98dB/104dB\n2.QTZ方案可行，还在长仿真中\n3.目前SDM子模块版图已画好，等待顶层连线\n4.摸底方针开关gm-C放大器方案",
+          "problems": "HW项目 gm-C开环放大器 具体细节需要讨论",
+          "nextPlan": "1.SDM顶层连线和整体后仿\n2.RA方案摸底仿真"
         },
         {
           "year": "2026",
@@ -25352,7 +25352,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001版图后仿+HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -25393,7 +25393,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001版图后仿+HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -25434,7 +25434,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001版图后仿+HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -25475,7 +25475,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "CH7001版图后仿+HW项目",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -27122,9 +27122,9 @@
             ""
           ],
           "monthlyPlan": "1.618DACX项目完成LDO的版图及后仿真\n2.7001振荡器及LDO设计",
-          "completed": "1、PGA子模块版图绘制完成\n2、AGC后仿完成，性能正常\n3、MRC仿真完成，目前存在温漂和频率Trim范围问题",
-          "problems": "MRC问题汇总\n1、由于CC整体频率下降，不满足在Ttrim=0时的Overlap（偏低）\n2、在NoRC体现出整体温漂系数上升0.7%，导致温度Trim范围偏向正温，负温调节能力太差\n3、可能是寄生电容的问题导致Ctrim的调节频率变低，假设原先Ctrim变化1挡，频率变化X，现在变化不到0.5X，但测试下来不影响整体Overlap",
-          "nextPlan": "1、找到MRC版图问题、修改前仿真电路，重新连线后仿真\n2、待MRC问题解决版图Fix后，解决LDO后仿真高频PSRR掉的太多的问题，目前初步怀疑是输出端口处的开关问题"
+          "completed": "",
+          "problems": "",
+          "nextPlan": ""
         },
         {
           "year": "2026",
@@ -27983,9 +27983,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、PGA子模块版图绘制完成\n2、AGC后仿完成，性能正常\n3、MRC仿真完成，目前存在温漂和频率Trim范围问题",
+          "problems": "MRC问题汇总\n1、由于CC整体频率下降，不满足在Ttrim=0时的Overlap（偏低）\n2、在NoRC体现出整体温漂系数上升0.7%，导致温度Trim范围偏向正温，负温调节能力太差\n3、可能是寄生电容的问题导致Ctrim的调节频率变低，假设原先Ctrim变化1挡，频率变化X，现在变化不到0.5X，但测试下来不影响整体Overlap",
+          "nextPlan": "1、找到MRC版图问题、修改前仿真电路，重新连线后仿真\n2、待MRC问题解决版图Fix后，解决LDO后仿真高频PSRR掉的太多的问题，目前初步怀疑是输出端口处的开关问题"
         },
         {
           "year": "2026",
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-09T01:50:46.261Z"
+  "syncedAt": "2026-11-09T05:50:07.500Z"
 }
