@@ -2380,9 +2380,9 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "IF评审材料准备及汇报",
+          "problems": "无",
+          "nextPlan": "IF评审后续行动项闭环\n华科专项材料修改"
         },
         {
           "year": "2026",
@@ -11998,9 +11998,9 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "1.20M论文改图\n2.温度测试和voltage测试\n3.ELD变化对性能影响\n4.和田震震开会探讨200MHz事项",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.修改REF并通读论文后交给老师\n2.200MHz仿真"
         },
         {
           "year": "2026",
@@ -14669,9 +14669,9 @@
             ""
           ],
           "monthlyPlan": "1..EEG AFE论文",
-          "completed": "",
+          "completed": "1.修改完成第一章和第二章，完成配图\n2.梳理第四章、第五章的逻辑脉络",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.完成第四章，开始第五章初稿"
         },
         {
           "year": "2026",
@@ -20011,9 +20011,9 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.IBF版图完成，后仿性能与前仿一致\n2.测试板完成初版，正在优化",
+          "problems": "无",
+          "nextPlan": "1.FLASH版图推进\n2.完成测试PCB"
         },
         {
           "year": "2026",
@@ -22682,9 +22682,9 @@
             ""
           ],
           "monthlyPlan": "1.TS科研：\n①前端杂波问题\n②补偿模块完善\n③ADC电路翻新+开关替换+性能仿真\n④辅助电路（CLK_GEN、IBANK、数字滤波器……）；\n⑤CORE电路核心仿真（温度误差、噪声、功耗……）\n2.BMS BG后仿、TS信号链联仿",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.BMS项目BG版图已出，正在进行后仿：\n①快慢上电正常\n②stb仿真正常\n③正在进行温漂绝对值校准仿真\n2.TS科研正在进行高阶补偿电路模块的真实化，使用有源加法器的ref产生模块能够正常工作，现在正在根据工艺角和MC的仿真进行校准位数和范围设计",
+          "problems": "1.BMS BG后仿速度较慢，通过设置gmin等仿真参数加快仿真，但是发现DC sweep曲线有些问题，不连续，怀疑是仿真器的问题，正在与tran仿真对比",
+          "nextPlan": "1.完成BMS BG的后仿（温漂、绝对值、噪声、功耗、EN切换）\n2.TS高阶补偿模块完全真实化"
         },
         {
           "year": "2026",
@@ -28024,9 +28024,9 @@
             ""
           ],
           "monthlyPlan": "1、推进7001项目\n2、推进HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、修改MRC版图布局，减小寄生电容\n2、MRC添加PTAT电流改善温漂，目前前仿真基本可以Fix，需要和丁老师确认",
+          "problems": "1、添加的PTAT电流目前仅和前仿真的MRC联仿，丁老师说需要和后仿真CC的MRC联仿才能看到更真实的效果，需要再提一版MRC的网表（新加PTAT电流的Pin）",
+          "nextPlan": "1、完成更新后的MRC的Floor，AI连线后验证后仿\n2、待MRC问题解决版图Fix后，解决LDO后仿真高频PSRR掉的太多的问题，目前初步怀疑是输出端口处的开关问题"
         },
         {
           "year": "2026",
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-12T02:52:35.261Z"
+  "syncedAt": "2026-11-16T01:55:22.139Z"
 }
