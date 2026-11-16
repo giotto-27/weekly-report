@@ -17340,9 +17340,9 @@
             ""
           ],
           "monthlyPlan": "1. 完成CH7001大顶层的版图、后仿\n2. 完成CH7001大顶层的前仿功能验证\n3. 完成CH1012 SHDR、RA等模块",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "CH7001：\n1. 带振荡器的上电仿真完成最新一版，无问题\n2. 追踪版图进展：11/16 完成第一级PGA，11/18完成所有顶层\nCH1012：\n1. 高压采样开关：已完成\n2. SHDR：正在仿真，时序还有问题",
+          "problems": "SHDR时序问题",
+          "nextPlan": "CH7001：\n1. 继续追踪版图进展\n2. 开始信号链后仿\n3. 开会对齐不同模式下的开关策略\n4. 顶层功能仿真\nCH1012：\n1. 继续仿真SHDR，调通时序"
         },
         {
           "year": "2026",
@@ -25353,9 +25353,9 @@
             ""
           ],
           "monthlyPlan": "CH7001版图后仿+HW项目",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.SDM顶层版图已画好，后仿性能下降到95dB/98dB，出现三次谐波，主要由QTZ引起\n2.gm-C放大器真实化CMFB和定时电路，提高gm，加入双阈值比较器电路",
+          "problems": "1.SDM顶层后仿性能下降，功耗上升\n2.双阈值比较器整体比较时间窗口波动在1%左右（MC仿真），对应引起RA增益波动\n3.RA网络对于开关敏感，同时引起CMFB振荡，需要优化电路",
+          "nextPlan": "1.SDM顶层版图仿真补充\n2.RA继续推进，放到两级SAR ADC中验证功能和性能，尽快暴露问题"
         },
         {
           "year": "2026",
@@ -30695,9 +30695,9 @@
             ""
           ],
           "monthlyPlan": "CH7001后仿与版图+BCI AFE",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 重新绘制I_CHANNEL AFE中ALS电路的完整版图，主要在上一版本的基础上重新考虑源随器主差分结构的对称性，并迎合顶层版图面积上的考虑；\n2. 目前更新后的完整ALS版图已完成，已经通过DRC与LVS检验",
+          "problems": "暂无",
+          "nextPlan": "1. 进行CLK_DELAY模块的版图摆放与走线工作；\n2. 继续学习ADC相关的电路基础知识；\n3. 阅读BCI AFE的相关论文"
         },
         {
           "year": "2026",
@@ -33366,7 +33366,7 @@
             ""
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "修改了输入与滤波器部分，学习了CT和DT调制器并搭建5种调制器，整理好了比较完整的DAC逻辑链",
           "problems": "",
           "nextPlan": ""
         },
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-16T01:55:22.139Z"
+  "syncedAt": "2026-11-16T07:53:47.279Z"
 }
