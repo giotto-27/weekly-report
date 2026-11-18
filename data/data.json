@@ -9285,9 +9285,9 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
+          "monthlyPlan": "EXP NC 环路Debug与实现",
+          "completed": "1.SAB + EXP cycle，系统理想仿真精度 98dB\n2.SAB + 真实运放 真实DAC，系统仿真精度 84dB",
+          "problems": "当前 SAB + 三级运放无法实现 95dB 预期精度",
           "nextPlan": ""
         },
         {
@@ -9326,10 +9326,10 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "monthlyPlan": "EXP NC 环路Debug与实现",
+          "completed": "用MASH第一级的两个积分器级联EXP NC LOOP，目前理想电路86dB，换真实运放84dB",
+          "problems": "依然无法达到理想电路和真实电路的目标精度",
+          "nextPlan": "继续debug目前的理想电路，找出限制EXP精度提升限制的根本原因"
         },
         {
           "year": "2026",
@@ -9367,7 +9367,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "EXP NC 环路Debug与实现",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -9408,7 +9408,7 @@
             "",
             ""
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "EXP NC 环路Debug与实现",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -9449,7 +9449,7 @@
             "#F4F5F8",
             "#F4F5F8"
           ],
-          "monthlyPlan": "",
+          "monthlyPlan": "EXP NC 环路Debug与实现",
           "completed": "",
           "problems": "",
           "nextPlan": ""
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-16T07:53:47.279Z"
+  "syncedAt": "2026-11-18T03:40:08.739Z"
 }
