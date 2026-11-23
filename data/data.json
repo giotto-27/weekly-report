@@ -9368,9 +9368,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "EXP NC 环路Debug与实现",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.EXP NC 功能检查：和 Simulink 对照\n2.QTZ 过载检查：1/4 Amp 输入\n3.线性 IADC 性能检查：增加 IADC OSR\n4.时序验证：\n 减小 EXP cycle 数，看整体 cycle 数\n 减小 线性 cycle 数，看整体精度\n 和simulink对照",
+          "problems": "目前线性和EXPcycle各自功能验证无误，且整体时序和功能验证无误，继续尝试别的debug方法",
+          "nextPlan": "继续debug目前的理想电路，找出限制EXP精度提升限制的根本原因"
         },
         {
           "year": "2026",
@@ -12039,9 +12039,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
+          "completed": "1.修改REF，配合修改论文\n2.理清后续200MHz仿真思路\n已做仿真：\n噪底：1.yuekai case+扰动信号 2.仔细看模拟电源扰动下各点的FFT 3.用电感ind模拟GND的弱连接\nHD2谐波：1.OP1/2单独切post-sim，跑MC",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.依据MO和老师的建议，将20MHz论文收尾\n2.噪底：先用R/L/C模拟电源的PDN，有异常现象的话去做emx；给不同部位注入扰动，观察哪个模块最敏感\n3.HD2：先排查是否是OP引入的HD2(MC仿真)；恶意修改OP单边finger，观察PSRR影响"
         },
         {
           "year": "2026",
@@ -20052,9 +20052,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1.高温下性能下降问题定位，在第二级SAR输入开关\n2.测试PCB优化",
+          "problems": "无",
+          "nextPlan": "1.FLASH版图推进\n2.数字接口部分整理"
         },
         {
           "year": "2026",
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-18T03:40:08.739Z"
+  "syncedAt": "2026-11-23T02:34:54.157Z"
 }
