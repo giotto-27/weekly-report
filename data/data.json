@@ -30736,9 +30736,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "CH7001后仿与版图+BCI AFE",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1. 绘制7001项目中CLK_DELAY模块的完整版图，目前已通过DRC与LVS检验；\n2. 学习ADC的相关基础知识(70%)",
+          "problems": "暂无",
+          "nextPlan": "1. 阅读BCI AFE的相关论文；\n2. 继续学习ADC相关的电路基础知识"
         },
         {
           "year": "2026",
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-23T02:34:54.157Z"
+  "syncedAt": "2026-11-23T08:54:58.340Z"
 }
