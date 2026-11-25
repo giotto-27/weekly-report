@@ -2421,9 +2421,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "",
-          "completed": "",
-          "problems": "",
-          "nextPlan": ""
+          "completed": "1、配合IF测试排查问题\n2、IF后续行动项除测试外已闭环",
+          "problems": "无",
+          "nextPlan": "1、继续帮忙一起排查IF测试bug\n2、科技部材料准备"
         },
         {
           "year": "2026",
@@ -14710,9 +14710,9 @@
             "#F4F5F8"
           ],
           "monthlyPlan": "1..EEG AFE论文",
-          "completed": "",
+          "completed": "1.完成第四章\n2.第五章初稿还未完成",
           "problems": "",
-          "nextPlan": ""
+          "nextPlan": "1.完成第五章\n2.修改第一二章\n3.开始第三章初稿"
         },
         {
           "year": "2026",
@@ -33660,5 +33660,5 @@
       ]
     }
   ],
-  "syncedAt": "2026-11-23T22:00:01.571Z"
+  "syncedAt": "2026-11-25T04:52:41.289Z"
 }
